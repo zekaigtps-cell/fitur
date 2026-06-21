@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spin Casino</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-glow"></div>
+
+    <div class="container">
+      <div class="topbar">
+        <div class="badge">CASINO SPIN</div>
+        <div class="coins">🪙 <span id="coinCount">100</span> Koin</div>
+      </div>
+
+      <h1 class="title">Spin Reward</h1>
+      <p class="subtitle">Dapatkan 3 gambar kembar untuk menang.</p>
+
+      <div class="slot-machine">
+        <div class="reel" id="reel1">❔</div>
+        <div class="reel" id="reel2">❔</div>
+        <div class="reel" id="reel3">❔</div>
+      </div>
+
+      <button id="spinBtn">SPIN SEKARANG</button>
+      <button id="adminBtn" class="admin-btn">ADMIN PANEL</button>
+
+      <p id="result">Klik tombol untuk memulai spin.</p>
+
+      <div class="legend">
+        <div class="legend-item">💎 Diamond Lock</div>
+        <div class="legend-item">🌍 World Lock</div>
+        <div class="legend-item">🔷 Blue Gem Lock</div>
+        <div class="legend-item vip" id="vipItem" style="display:none;">👑 VIP Admin</div>
+      </div>
+    </div>
+
+    <div class="admin-panel" id="adminPanel">
+      <div class="admin-card">
+        <h2>Admin Panel</h2>
+        <p>Status admin: <span id="adminStatus">Nonaktif</span></p>
+
+        <label for="coinInput">Atur koin:</label>
+        <input type="number" id="coinInput" value="100" min="0" />
+
+        <button id="setCoinBtn">UPDATE KOIN</button>
+
+        <div class="admin-actions">
+          <button id="adminOnBtn" class="admin-on-btn">AKTIF</button>
+          <button id="adminOffBtn" class="admin-off-btn">NONAKTIF</button>
+        </div>
+
+        <button id="closeAdminBtn" class="secondary-btn">Tutup</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
